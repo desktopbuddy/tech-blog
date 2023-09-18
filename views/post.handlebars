@@ -1,7 +1,8 @@
 <section class="main-section">
   <h3>{{post.title}}</h3>
   <h5>Posted by {{post.user.username}} on {{format_date post.date_created}}</h5>
-  <div>{{post.content}}</div>
+  <div class="post-content">{{post.content}}</div>
+  <hr>
   <h4>Comments</h4>
   {{!-- TODO: If logged in, post new comment form --}}
   {{> comments post.comments}}

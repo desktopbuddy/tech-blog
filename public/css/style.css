@@ -52,15 +52,20 @@ a {
 }
 
 .main-section h3 {
-  margin: 1em;
-  font-size: 1.5em;
+  margin-bottom: 0;
+  font-size: 2em;
+}
+
+.main-section h5 {
+  margin: 0.5em 0;
+  font-weight: normal;
 }
 
 .card {
   border: solid;
   border-radius: 8px;
   border-color: var(--light-green);
-  margin:1em;
+  margin: 1em 0;
 }
 
 .card-header {
@@ -124,4 +129,27 @@ a {
   display: block;
   margin: auto;
   padding: .8em 1.5em;
+}
+
+.post-content {
+  margin: 2em 1em;
+  margin-bottom: 4em;
+}
+
+
+.comment {
+  border-radius: 8px;
+  border-color: var(--light-green);
+  padding: 1em;
+}
+
+.comment-header {
+  margin-bottom: 0.7em;
+}
+.comment-author {
+  font-weight: bold;
+}
+
+.comment-time {
+  font-size: 0.8em;
 }

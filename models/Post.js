@@ -22,6 +22,7 @@ Post.init(
         date_created: {
             type: DataTypes.DATE,
             allowNull: false,
+            defaultValue: sequelize.fn('now'),
         },
         creator_id: {
             type: DataTypes.INTEGER,

@@ -18,6 +18,7 @@ Comment.init(
         date_created: {
             type: DataTypes.DATE,
             allowNull: false,
+            defaultValue: sequelize.fn('now'),
         },
         post_id: {
             type: DataTypes.INTEGER,

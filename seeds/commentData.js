@@ -5,7 +5,7 @@ const commentData = [
     content: 'i agree with this.',
     post_id: 1,
     creator_id: 2,
-  }
+  },
   {
     content: 'ur a legend',
     post_id: 2,
@@ -15,4 +15,4 @@ const commentData = [
 
 const seedComment = () => Comment.bulkCreate(commentData);
 
-module.exports(seedComment);
+module.exports = seedComment;

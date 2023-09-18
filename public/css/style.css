@@ -45,13 +45,13 @@ a {
   margin-left: auto;
 }
 
-#post-feed {
+.main-section {
   margin: 1em auto;
   margin-top: 2em;
   max-width: 80%;
 }
 
-#post-feed h3 {
+.main-section h3 {
   margin: 1em;
   font-size: 1.5em;
 }

@@ -28,7 +28,54 @@ router.get('/', async (req, res) => {
     console.log(err);
     res.status(500).json(err);
   }
-})
+});
+
+// GET a single blogpost
+router.get('/post/:id', async (req, res) => {
+  try {
+    const postData = await Post.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: {
+            exclude: ['password'],
+            include: ['username'],
+          },
+        },
+        {
+          model: Comment,
+          attributes: [
+            'id',
+            'content',
+            'date_created',
+            'creator_id'
+          ],
+          include: [
+            {
+              model: User,
+              attributes: ['username'],
+            }
+          ],
+        },
+      ]
+    });
+
+    if (!postData) {
+      res.status(404).json({ message: 'No post found with this id!' });
+      return;
+    }
+
+    const post = postData.get({ plain: true });
+
+    res.render('post', {
+      post,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 
 
 router.get('/login', (req, res) => {

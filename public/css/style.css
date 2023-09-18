@@ -1,0 +1,41 @@
+:root {
+  --light: #FAF3DD;
+  --dark: #604D53;
+  --light-green: #C8D5B9;
+  --dark-green: #517664;
+  --accent: #ED7D3A;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--dark);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.topnav {
+  background-color: var(--dark-green);
+  display: flex;
+  align-items: flex-end;
+}
+
+.topnav h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.topnav a {
+  float: left;
+  color: var(--light);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: var(--light-green);
+  color: var(--dark);
+}
+
+.topnav-right {
+  margin-left: auto;
+}

@@ -10,6 +10,11 @@ body {
   background-color: var(--light);
   color: var(--dark);
   font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .topnav {
@@ -28,7 +33,6 @@ body {
   color: var(--light);
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
 }
 
 .topnav a:hover {
@@ -38,4 +42,44 @@ body {
 
 .topnav-right {
   margin-left: auto;
+}
+
+#post-feed {
+  margin: 1em;
+  margin-top: 2em;
+}
+
+#post-feed h3 {
+  margin: 1em;
+  font-size: 1.5em;
+}
+
+.card {
+  border: solid;
+  border-radius: 8px;
+  border-color: var(--light-green);
+  margin:1em;
+}
+
+.card-header {
+  background-color: var(--light-green);
+  color: var(--dark);
+  padding: 1em;
+  align-items: bottom;
+}
+
+.post-title {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.post-creator {
+  font-size: 0.8em;
+  float: right;
+}
+
+.card-content {
+  font-size: 0.8em;
+  padding: 1em;
+  color: var(--dark);
 }

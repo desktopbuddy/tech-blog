@@ -3,9 +3,15 @@
   <div class="create-post">
     <a href="/dashboard/new"><button class="btn primary-btn">+ Create new post</button></a>
   </div>
+
   <div>
-  {{#each posts as |post|}}
-  {{> dashboard-post-details}}
-  {{/each}}
+    {{#if posts.length}}
+    {{#each posts as |post|}}
+    {{> dashboard-post-details}}
+    {{/each}}
+    {{else}}
+      <div><p>You don't have any posts yet!</p></div>
+    {{/if}}
   </div>
+
 </section>

@@ -4,7 +4,21 @@
   <div class="post-content">{{post.content}}</div>
   <hr>
   <h4>Comments</h4>
-  {{!-- TODO: If logged in, post new comment form --}}
+  {{#if logged_in}}
+  <div class="new-comment">
+    <form class="comment-form">
+      <div class="form-group">
+        <textarea id="comment-content" name="comment-content"></textarea>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">Comment</button>
+      </div>
+    </form>
+  </div>
+  {{/if}}
   {{> comments post.comments}}
-  {{!-- TODO: If logged in, script for comment form --}}
 </section>
+
+{{#if logged_in}}
+<script src="/js/comment.js"></script>
+{{/if}}

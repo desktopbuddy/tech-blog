@@ -83,3 +83,43 @@ a {
   padding: 1em;
   color: var(--dark);
 }
+
+.login-options {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  height: 80vh;
+  margin: auto;
+  align-items: center;
+}
+
+.login-card .card-header h2 {
+  margin: 0;
+}
+
+.login-form, .signup-form {
+  margin: 3em;
+}
+
+.form-group {
+  margin: 1em;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  border: none;
+  color: var(--light);
+  padding: .8em;
+  font-weight: bold;
+  font-size: 1em;
+  border-radius: 8px;
+}
+
+.form-group .btn {
+  background-color: var(--accent);
+  border: none;
+  color: var(--light);
+  display: block;
+  margin: auto;
+  padding: .8em 1.5em;
+}

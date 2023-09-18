@@ -1,19 +1,16 @@
 <section class="main-section">
+  <h2>Edit post</h2>
   <div class="card">
-    <div class="card-header">
-      <h2>Edit post</h2>
-    </div>
     <form class="edit-post-form">
       <div class="form-group">
-        <label for="edit-post-title">Title</label>
-        <input class="form-input" type="text" id="edit-post-title" value="{{post.title}}"/>
+        <input class="form-input" type="text" id="edit-post-title" placeholder="Title" value="{{post.title}}"/>
       </div>
       <div class="form-group">
-        <textarea id="edit-post-content" name="edit-post-content">{{post.content}}</textarea>
+        <textarea id="edit-post-content" name="edit-post-content" placeholder="Write your post here...">{{post.content}}</textarea>
       </div>
-      <div class="form-group">
+      <div class="form-group" id="edit-buttons">
         <button class="btn btn-primary" type="submit">Save changes</button>
-        <button class="btn btn-delete" id="delete-post-btn">Delete</button>
+        <button class="btn-delete" id="delete-post-btn">Delete</button>
       </div>
     </form>
   </div>

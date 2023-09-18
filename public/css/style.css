@@ -17,10 +17,16 @@ a {
   text-decoration: none;
 }
 
-.topnav {
+.topnav-wrapper {
+  width: 100%;
   background-color: var(--dark-green);
+}
+
+.topnav {
   display: flex;
   align-items: flex-end;
+  max-width: 90%;
+  margin: auto;
 }
 
 .topnav h3 {
@@ -176,7 +182,7 @@ a {
 textarea {
   resize: none;
   width: 100%;
-  border
+  font-family: inherit;
 }
 
 .comment-form .form-group {
@@ -195,4 +201,31 @@ textarea {
   color: var(--light);
   border: none;
   border-radius: 8px;
+}
+
+#edit-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+#edit-buttons button {
+  margin: 1em;
+}
+
+.btn-delete {
+  background-color: transparent;
+  color: rgb(201, 0, 0);
+  font-weight: bold;
+  border: none;
+}
+
+#edit-post-title, #create-post-title {
+  font-size: 2em;
+  font-weight: bold;
+  width: 100%;
+}
+
+#create-post-content, #edit-post-content {\
+  height: 8em;
 }

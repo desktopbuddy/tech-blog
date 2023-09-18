@@ -1,0 +1,11 @@
+<section class="main-section">
+  <h3>Dashboard</h3>
+  <div class="create-post">
+    <button class="btn primary-btn">+ Create new post</button>
+  </div>
+  <div>
+  {{#each posts as |post|}}
+  {{> post-details}}
+  {{/each}}
+  </div>
+</section>

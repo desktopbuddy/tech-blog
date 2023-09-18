@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
       order: [['date_created','DESC']],
     });
 
-    const posts = postData.map((project) => project.get({ plain: true }));
+    const posts = postData.map((post) => post.get({ plain: true }));
 
     res.render('homepage', {
       posts,

@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: var(--light);
+  background-color: #fefbf0;
   color: var(--dark);
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
@@ -181,4 +181,18 @@ textarea {
 
 .comment-form .form-group {
   margin: 0.5em;
+}
+
+.create-post {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.create-post .btn {
+  padding: 0.8em 1em;
+  font-weight: bold;
+  background-color: var(--accent);
+  color: var(--light);
+  border: none;
+  border-radius: 8px;
 }

@@ -48,4 +48,9 @@ router.get('/', withAuth, async (req, res) => {
   }
 });
 
+// GET new post page
+router.get('/new', withAuth, async (req, res) => {
+  res.render('new-post');
+})
+
 module.exports = router;

@@ -18,7 +18,7 @@
 
   ## Installation
   
-  Simply navigate to https://immense-savannah-01195-37be446a1f14.heroku.app.com to view the blog
+  Simply navigate to https://tranquil-badlands-98042-f531b135d31f.herokuapp.com/ to view the blog
 
   ## Usage
 
